@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "comment-on-articles-on-kompas.com",
+    "uri": "features/comment_news.feature",
+    "keyword": "Feature",
+    "name": "Comment on articles on Kompas.com",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "comment-on-articles-on-kompas.com;post-a-comment-on-an-article",
+        "keyword": "Scenario",
+        "name": "Post a comment on an article",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in",
+            "line": 4,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15994737200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I am on an article page",
+            "line": 5,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1490989900
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I click on the comment icon",
+            "line": 6,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386400100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be redirected to the comment page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 326387100
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I write a comment \"Komentar biasa\"",
+            "line": 8,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153338500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the send button",
+            "line": 9,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1307518500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "my comment should be displayed on the article",
+            "line": 10,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30628600
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185009100
+            }
+          }
+        ]
+      },
+      {
+        "id": "comment-on-articles-on-kompas.com;post-a-comment-with-special-characters",
+        "keyword": "Scenario",
+        "name": "Post a comment with special characters",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in",
+            "line": 13,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7090556800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I am on an article page",
+            "line": 14,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 982925500
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I click on the comment icon",
+            "line": 15,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137978700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be redirected to the comment page",
+            "line": 16,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15473700
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I write a comment with special characters \"Komentar dengan emoji 😃 dan simbol ©\"",
+            "line": 17,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 569642500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the send button",
+            "line": 18,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1288948900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "my comment with special characters should be displayed on the article",
+            "line": 19,
+            "match": {
+              "location": "features/step_definition/comment_step.rb:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31724900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7700
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185043200
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "login-functionality-on-kompas.com",
+    "uri": "features/login_news.feature",
+    "keyword": "Feature",
+    "name": "Login functionality on Kompas.com",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "login-functionality-on-kompas.com;successful-login",
+        "keyword": "Scenario",
+        "name": "Successful login",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas login page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definition/login_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 621915200
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I log in with valid credentials",
+            "line": 5,
+            "match": {
+              "location": "features/step_definition/login_step.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1210997200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be redirected to the Kompas homepage",
+            "line": 6,
+            "match": {
+              "location": "features/step_definition/login_step.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7657481800
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 277988700
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-functionality-on-kompas.com;login-with-empty-email",
+        "keyword": "Scenario",
+        "name": "Login with empty email",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas login page",
+            "line": 9,
+            "match": {
+              "location": "features/step_definition/login_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 788158600
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I log in with an empty \"email\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definition/login_step.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 905994800
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an error message for empty \"email\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definition/login_step.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61475100
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141170200
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-functionality-on-kompas.com;login-with-empty-password",
+        "keyword": "Scenario",
+        "name": "Login with empty password",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas login page",
+            "line": 14,
+            "match": {
+              "location": "features/step_definition/login_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 741927900
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I log in with an empty \"password\"",
+            "line": 15,
+            "match": {
+              "location": "features/step_definition/login_step.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 894565000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an error message for empty \"password\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definition/login_step.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47093100
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138428000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-functionality-on-kompas.com;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "name": "Login with invalid credentials",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas login page",
+            "line": 19,
+            "match": {
+              "location": "features/step_definition/login_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 585789700
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I log in with invalid credentials",
+            "line": 20,
+            "match": {
+              "location": "features/step_definition/login_step.rb:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 989468400
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an error message for invalid credentials",
+            "line": 21,
+            "match": {
+              "location": "features/step_definition/login_step.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46524900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7200
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124402300
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-functionality-on-kompas.com;protect-against-sql-injection",
+        "keyword": "Scenario",
+        "name": "Protect against SQL Injection",
+        "description": "",
+        "line": 23,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas login page",
+            "line": 24,
+            "match": {
+              "location": "features/step_definition/login_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 746238500
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I attempt to log in with SQL Injection payload",
+            "line": 25,
+            "match": {
+              "location": "features/step_definition/login_step.rb:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 311118300
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8200
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139705900
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-functionality-on-kompas.com;protect-against-brute-force-attacks",
+        "keyword": "Scenario",
+        "name": "Protect against brute force attacks",
+        "description": "",
+        "line": 27,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas login page",
+            "line": 28,
+            "match": {
+              "location": "features/step_definition/login_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 714309000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I attempt multiple invalid logins",
+            "line": 29,
+            "match": {
+              "location": "features/step_definition/login_step.rb:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2803071400
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137346800
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "website-performance",
+    "uri": "features/pageLoad_news.feature",
+    "keyword": "Feature",
+    "name": "Website performance",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "website-performance;test-page-load-speed",
+        "keyword": "Scenario",
+        "name": "Test page load speed",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas homepage",
+            "line": 4,
+            "match": {
+              "location": "features/step_definition/search_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1737797200
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "the page loads",
+            "line": 5,
+            "match": {
+              "location": "features/step_definition/pageLoad_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the page should load within 3 seconds",
+            "line": 6,
+            "match": {
+              "location": "features/step_definition/pageLoad_step.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380150600
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6700
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220752800
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pagination-for-long-articles",
+    "uri": "features/pagination_news.feature",
+    "keyword": "Feature",
+    "name": "Pagination for long articles",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "pagination-for-long-articles;test-article-pagination",
+        "keyword": "Scenario",
+        "name": "Test article pagination",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am reading a long article",
+            "line": 4,
+            "match": {
+              "location": "features/step_definition/pagination_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2915245800
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I click the Show All button",
+            "line": 5,
+            "match": {
+              "location": "features/step_definition/pagination_step.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2081652000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the full content of the article should be displayed without pagination",
+            "line": 6,
+            "match": {
+              "location": "features/step_definition/pagination_step.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2680949800
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13800
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183407300
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "website-responsiveness",
+    "uri": "features/responsiveness_news.feature",
+    "keyword": "Feature",
+    "name": "Website responsiveness",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "website-responsiveness;test-website-responsiveness",
+        "keyword": "Scenario",
+        "name": "Test website responsiveness",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas homepage",
+            "line": 4,
+            "match": {
+              "location": "features/step_definition/search_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 868586100
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I resize the browser to mobile size",
+            "line": 5,
+            "match": {
+              "location": "features/step_definition/responsiveness_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 751529600
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the homepage should be displayed correctly on mobile",
+            "line": 6,
+            "match": {
+              "location": "features/step_definition/responsiveness_step.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46305200
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6200
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229339200
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "search-news-on-kompas.com",
+    "uri": "features/search_news.feature",
+    "keyword": "Feature",
+    "name": "Search news on Kompas.com",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "search-news-on-kompas.com;search-for-a-specific-news-and-read-the-article",
+        "keyword": "Scenario",
+        "name": "Search for a specific news and read the article",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas homepage",
+            "line": 4,
+            "match": {
+              "location": "features/step_definition/search_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 819752000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"Pilkada 2024\"",
+            "line": 5,
+            "match": {
+              "location": "features/step_definition/search_step.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22586182200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be redirected to the search results page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definition/search_step.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17216300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should see search results related to \"Pilkada 2024\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definition/search_step.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 489794900
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I click on the first news article",
+            "line": 8,
+            "match": {
+              "location": "features/step_definition/search_step.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1513105000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be redirected to the article page",
+            "line": 9,
+            "match": {
+              "location": "features/step_definition/search_step.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14938700
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should see the content of the article",
+            "line": 10,
+            "match": {
+              "location": "features/step_definition/search_step.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157625200
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1212436900
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-news-on-kompas.com;search-news-with-a-typo",
+        "keyword": "Scenario",
+        "name": "Search news with a typo",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Kompas homepage",
+            "line": 13,
+            "match": {
+              "location": "features/step_definition/search_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1086409200
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"Pilkkada 2024\"",
+            "line": 14,
+            "match": {
+              "location": "features/step_definition/search_step.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1524143200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see suggestions related to \"Pilkada 2024\"",
+            "line": 15,
+            "match": {
+              "location": "features/step_definition/search_step.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 647091200
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10900
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 196538500
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
